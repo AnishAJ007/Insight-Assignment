@@ -5,151 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academics</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-    
-        .img-fluid {
-    display: block; 
-    margin: 0 auto; 
-    max-width: 50%; 
-}
 
-        span{
-    display: block;
-}
-        
-        
-        body {
-            background-color: #CDE2D9;
-        }
-    
-        img {
-            padding: 20px 0px;
-            margin-bottom: 10px;
-        }
-    
-        a {
-            text-align: center;
-            font-family: "Merriweather", serif;
-            font-weight: 800;
-            font-style: normal;
-            padding: 50px;
-            margin-top: 10px;
-        }
-    
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #347F85;
-            padding-top: 20px;
-            transition: width 0.3s;
-            height: 100%;
-        }
-    
-        .sidebar img {
-            display: block;
-            margin: 0px 0px;
-            max-width: 105%;
-        }
-    
-        .sidebar a {
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #f8f9fa;
-            display: block;
-        }
-    
-        .sidebar a:hover {
-            background-color: #347F85;
-        }
-    
-        .main {
-            margin-left: 250px;
-            padding: 20px;
-            min-height: 400px; /* Set a minimum height */
-            margin-top: 10px; /* Adjust margin top */
-        }
-
-        span{
-                color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 22px;
-    margin: 0px;
-    padding: 0px;
-
-            }
-
-
-            
-    
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: absolute;
-            }
-            .sidebar img {
-                display: block;
-                margin: 0 auto;
-                max-width: 80%;
-            }
-            .sidebar a {
-                text-align: center;
-            }
-            .main {
-                margin-left: 0; /* Reset margin left */
-                padding: 20px;
-                margin-top: 450px; /* Adjust margin top */
-            }
-
-
-        }
-
-        .footerbutton{
-                display: flex;
-    justify-content: center;    
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    flex-wrap: wrap;
-    flex: 1 1;
-            } 
-
-
-        #miscellaneous{
-            flex-grow: 1;
-    margin: 10px 10px;
-    padding: 5px 20px;
-    background-color: #B6E0CE;
-    border-radius: 12px;
-    color: #347F85;
-    border: 1.5px solid #347F85;
-    border-style: solid;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-        }    
-
-        #career{
-            flex-grow: 1;
-    margin: 10px 10px;
-    padding: 5px 20px;
-    background-color: #B6E0CE;
-    border-radius: 12px;
-    color: #347F85;
-    border: 1.5px solid #347F85;
-    border-style: solid;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-        }
-
-        
-    </style>
-
+    <link rel="stylesheet" href="./style2.css">
 </head>
 <body>
 
@@ -236,19 +93,67 @@
 
     <div style="min-height:530px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/UZHhF/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/UZHhF/full.png" alt="" /></noscript></div>
 
+    <hr style="margin: 30px 0px;">
 
-    
-</div>
 
 
 <div class="footerbutton">
-
-    <button id="career">←Career</button>
-
-    <button id="miscellaneous">Miscellaneous→</button>
+    <button id="miscellaneous">← Miscellaneous</button>
+    <button id="career">Career →</button>
 </div>
 
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top">Back to Top </button>
 
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="index.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    // Function to scroll back to the top of the page   
+    function topFunction() {
+
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<style>
+    /* Styling for the back to top button */
+    #backToTopBtn {
+        display: none; /* Initially hide the button */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: #347F85;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 40%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #backToTopBtn:hover {
+        background-color: #285E63;
+    }
+</style>
+
+<script>
+    // Show or hide the back to top button based on scroll position
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+            document.getElementById("backToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("backToTopBtn").style.display = "none";
+        }
+    }
+</script>
+
+</div>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="index.js" charset="utf-8"></script>   
 </body>
